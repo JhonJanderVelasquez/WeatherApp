@@ -24,8 +24,6 @@ export class WeatherDashboardComponent implements OnInit {
 
       (result) => {
         if (result){
-          console.log(result);
-
           const new_data: WeatherInfo = result.properties.periods.reduce((acc: any, { name, temperature, isDaytime }: any) => {
             if (isDaytime){
               acc.isDay.name.push(name);
@@ -42,8 +40,6 @@ export class WeatherDashboardComponent implements OnInit {
 
           }, { isDay: {name: [], temperature: []}, isNight: {name: [], temperature: []} });
 
-          console.log(new_data);
-
           const data = {
             labels: new_data.isNight.name,
             datasets: [{
@@ -53,9 +49,6 @@ export class WeatherDashboardComponent implements OnInit {
               borderColor: '#AFD2E9',
               backgroundColor: '#fff',
               spanGaps:true,
-              // scaleFontColor: "#FFFFFF",
-              // pointLabelFontColor : "#FFFFFF",
-              // pointLabelFontSize : 30,
               tension: 0.1
             },
             {
