@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-kansas-dashboard',
-  templateUrl: './kansas-dashboard.component.html',
-  styleUrls: ['./kansas-dashboard.component.sass']
+  templateUrl: './kansas-dashboard.component.html'
 })
 export class KansasDashboardComponent {
 
