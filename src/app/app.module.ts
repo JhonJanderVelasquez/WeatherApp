@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { KansasDashboardComponent } from './kansas-dashboard/kansas-dashboard.component';
 import { ColumbiaDashboardComponent } from './columbia-dashboard/columbia-dashboard.component';
 import { provideHttpClient } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideHttpClient } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
