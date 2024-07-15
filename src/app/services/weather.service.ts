@@ -16,7 +16,7 @@ export class WeatherService {
       return this.http.get<any>(this.URL_KANSAS_WEATHER)
     }
     if (city == 'columbia') {
-      return this.http.get<any>(this.URL_KANSAS_WEATHER)
+      return this.http.get<any>(this.URL_COLUMBIA_WEATHER)
     } else {
       return null
     }
