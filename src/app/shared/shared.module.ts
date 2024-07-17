@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { WeatherDashboardComponent } from './weather-dashboard/weather-dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { ReturnHomeComponent } from './return-home/return-home.component';
+import { CloudIconComponent } from './resources/cloud-icon/cloud-icon.component';
+import { WeatherCityCardComponent } from './weather-city-card/weather-city-card.component';
 
 
 @NgModule({
@@ -10,6 +12,8 @@ import { ReturnHomeComponent } from './return-home/return-home.component';
     WeatherDashboardComponent,
     HeaderComponent,
     ReturnHomeComponent,
+    CloudIconComponent,
+    WeatherCityCardComponent,
   ],
   imports: [
     CommonModule
@@ -17,7 +21,9 @@ import { ReturnHomeComponent } from './return-home/return-home.component';
   exports: [
     WeatherDashboardComponent,
     HeaderComponent,
-    ReturnHomeComponent
+    ReturnHomeComponent,
+    CloudIconComponent,
+    WeatherCityCardComponent
   ]
 })
 export class SharedModule { }
